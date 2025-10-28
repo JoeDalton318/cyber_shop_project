@@ -1,0 +1,44 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+:root {
+  --color-dark: #0A0A0A; /* Arrière-plan sombre */
+  --color-primary-neon: #39FF14; /* Neon Green */
+  --color-secondary-neon: #FFF000; /* Electric Yellow */
+  --color-accent-neon: #A020F0; /* Cyber Purple */
+  --color-text-light: #FAFAFA;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-dark);
+  color: var(--color-text-light);
+  font-family: 'Orbitron', sans-serif; /* Police Cyberpunk */
+  text-shadow: 0 0 5px var(--color-primary-neon); /* Effet lumineux */
+}
+
+/* Styles pour les titres */
+h1, h2, h3 {
+  color: var(--color-primary-neon);
+  text-shadow: 0 0 10px var(--color-primary-neon), 0 0 20px var(--color-dark);
+  letter-spacing: 0.1em;
+}
+
+/* Styles généraux pour les liens et boutons */
+a, button {
+  color: var(--color-secondary-neon);
+  text-decoration: none;
+  background: none;
+  border: 1px solid var(--color-secondary-neon);
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px var(--color-secondary-neon);
+}
+
+a:hover, button:hover {
+  background-color: var(--color-secondary-neon);
+  color: var(--color-dark);
+  box-shadow: 0 0 15px var(--color-secondary-neon);
+}
