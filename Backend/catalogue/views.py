@@ -27,7 +27,10 @@ class ProduitViewSet(viewsets.ReadOnlyModelViewSet):
     filterset_fields = ['categorie__nom', 'niveau_prix'] 
     
     # 3. Champs de Recherche (pour la requête GET ?search=terme)
-    search_fields = ['nom', 'description']
+    search_fields = ['nom']
     
     # 4. Champs d'Ordre (pour la requête GET ?ordering=prix ou ?ordering=-prix)
-    ordering_fields = ['prix', 'date_ajout']
+    ordering_fields = ['prix', 'date_ajout', 'nom']
+
+    # 5. Ordre par défaut
+    ordering = ['nom']

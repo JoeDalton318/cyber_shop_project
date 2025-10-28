@@ -1,5 +1,5 @@
-// src/pages/Home.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -10,9 +10,9 @@ function Home() {
       <p style={descriptionStyle}>
         Votre source exclusive pour les technologies illicites, les augmentations chromées et les équipements de survie urbaine. Accès sécurisé. Paiement en crédits uniquement.
       </p>
-      <a href="/catalogue" style={accessButtonStyle}>
+      <Link to="/catalogue" style={accessButtonStyle}>
         Accéder au Catalogue 
-      </a>
+      </Link>
     </div>
   );
 }
