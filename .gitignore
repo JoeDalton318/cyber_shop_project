@@ -1,0 +1,81 @@
+# ------------------------------------
+# 1. FICHIERS GENERAUX (OS/Environnement)
+# ------------------------------------
+*~
+*.log
+.DS_Store
+.vscode/
+
+# Fichiers de configuration sensibles (s'ils existent)
+.env
+.flaskenv
+
+# ------------------------------------
+# 2. PYTHON (DJANGO)
+# ------------------------------------
+
+# Environnement virtuel Python (Venv)
+# Le dossier 'venv' ne doit JAMAIS être versionné.
+venv/
+.venv/
+env/
+
+# Fichiers de cache Python
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Fichiers de base de données SQLite (Base de données locale)
+db.sqlite3
+*.sqlite3
+
+# Dossier d'upload de fichiers médias (images de produits)
+# Comme défini dans settings.py (MEDIA_ROOT)
+media/
+
+# Dossiers de statiques collectés (créé par 'collectstatic')
+staticfiles/
+
+# Logs et rapports de tests
+.coverage
+htmlcov/
+
+# Dossiers de migrations auto-générés vides (optionnel)
+# Si vous créez une app vide sans modèle, vous pourriez avoir un fichier __init__.py sans dossier de migration
+# Utilisez ceci si vous voulez ignorer le dossier "migrations" des apps vides, mais c'est risqué.
+# */migrations/0*.py
+
+# ------------------------------------
+# 3. JAVASCRIPT (REACT/NODE)
+# ------------------------------------
+# Placez ce qui suit DANS le dossier cyber_shop_frontend/
+
+### Node ###
+# Dossier des dépendances
+node_modules/
+
+# Logs de développement et de construction
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Dossiers de construction (Production/Build)
+# Le dossier créé par 'npm run build'
+build/
+dist/
+out/
+
+# Fichiers de cache
+.npm
+.eslintcache
+.parcel-cache
+
+### Create React App ###
+# Le dossier d'upload et de build est ignoré ci-dessus, mais on s'assure d'ignorer ces fichiers spécifiques
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
